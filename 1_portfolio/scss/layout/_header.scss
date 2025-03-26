@@ -1,0 +1,79 @@
+@import '../utils/variables';
+@import '../utils/mixin';
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $mw-tablet-d) {
+      flex-direction: column;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    @media screen and (max-width: $mw-tablet-d) {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    margin: 12px 0 0 24px;
+
+    @media screen and (max-width: $mw-tablet-d) {
+      width: 148px;
+      height: auto;
+      flex-shrink: 0;
+      margin: 48px 0 0 24px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    padding-left: 64px;
+    gap: 62px;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width: $mw-desctop-d) {
+      gap: 20px;
+      padding-left: 32px;
+    }
+
+    @media screen and (max-width: $mw-tablet-d) {
+      display: none;
+    }
+
+    &-item {
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: transform 0.3s ease;
+    }
+    &-item ul,
+    li:hover {
+      transform: scale(1.2);
+    }
+
+    &-item ul,
+    li::after {
+      content: '';
+      color: $accent-color;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      width: 100%;
+      height: 2px;
+      background: $accent-color;
+      transform: scaleX(0);
+      transition: transform 0.2s ease;
+    }
+
+    &-item ul,
+    li:hover::after {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPLORE INDONESIA</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <a class="header__logo" href="#">
+            <img src="./assets/images/Logo_EI.png" alt="logo explore indonesia" />
+          </a>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="#walkways-section">destinations</a></li>
+            <li class="header__menu-item"><a href="#secrets-section">about</a></li>
+            <li class="header__menu-item"><a href="#life-section">experiences</a></li>
+            <li class="header__menu-item"><a href="#gallery-section">gallery</a></li>
+          </ul>
+          <div class="dropdown">
+            <button type="button" class="dropdown__button">
+              <svg class="dropdown__button-icon">
+                <use href="./assets/icons/symbol-defs.svg#icon-Vector-1"></use>
+              </svg>
+            </button>
+            <div class="dropdown__menu">
+              <ul class="dropdown__menu--list">
+                <li class="dropdown__menu--item"><a href="#walkways-section">destinations</a></li>
+                <li class="dropdown__menu--item"><a href="#secrets-section">about</a></li>
+                <li class="dropdown__menu--item"><a href="#life-section">experiences</a></li>
+                <li class="dropdown__menu--item"><a href="#gallery-section">gallery</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1 class="hero-section__title animation-opacity-scale">explore indonesia</h1>
+        <button class="hero-section__button button open-modal animation-opacity" type="button">Start travelling</button>
+      </section>
+      <section class="trip-section">
+        <ol class="trip-section__list animation-opacity">
+          <li class="trip-section__item">
+            <h2 class="trip-section__title">Title here</h2>
+            <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
+          </li>
+          <li class="trip-section__item">
+            <h2 class="trip-section__title">Title here</h2>
+            <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
+          </li>
+          <li class="trip-section__item">
+            <h2 class="trip-section__title">Title here</h2>
+            <p>Lorem ipsum dolor sit amet et amet ist ame.</p>
+          </li>
+        </ol>
+        <div class="trip-section__video-container">
+          <video class="trip-section__video animation-opacity" controls muted>
+            <source src="./assets/video/video_indonesia.mp4" type="video/mp4" />
+            <source src="./assets/video/video_indonesia.webm" type="video/webm" />
+            Your browser does not support video
+          </video>
+        </div>
+      </section>
+      <section class="walkways-section" id="walkways-section">
+        <div class="walkways-section__wrapper-img animation-movement-left">
+          <img
+            class="walkways-section__photo"
+            src="./assets/images/walkways_indonesia.jpg"
+            alt="photo of the trails of Indonesia"
+          />
+        </div>
+        <div class="walkways-section__wrapper">
+          <h3 class="walkways-section__title animation-movement-right">The walkways of Indonesia spellbind</h3>
+          <p class="animation-opacity">
+            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.
+          </p>
+          <button class="walkways-section__button button open-modal animation-opacity" type="button">Learn More</button>
+        </div>
+      </section>
+      <section class="beaches-section">
+        <div class="beaches-section__wrapper">
+          <h3 class="beaches-section__title animation-movement-left">Perfect beaches exude relaxation and fun</h3>
+          <p class="animation-opacity">
+            Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.
+          </p>
+          <button class="beaches-section__button button open-modal animation-opacity" type="button">Learn More</button>
+        </div>
+        <div class="beaches-section__wrapper-img animation-movement-right">
+          <img
+            class="beaches-section__photo"
+            src="./assets/images/beaches_indonesia.jpg"
+            alt="photo of a beach in Indonesia"
+          />
+        </div>
+      </section>
+      <section class="secrets-section" id="secrets-section">
+        <h2 class="secrets-section__title">Explore Our Secrets</h2>
+        <div class="secrets-section__wrapper--swiper">
+          <div class="secrets-section__button secrets-section__button--wrapper-prev">
+            <button type="button">
+              <svg class="secrets-section__button-prev" width="24px" height="24px">
+                <use href="./assets/icons/symbol-defs.svg#icon-Union-1"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/cor_1.jpg" alt="photo indonesia" /></div>
+              <div class="swiper-slide"><img src="./assets/images/cor_2.jpg" alt="photo indonesia" /></div>
+              <div class="swiper-slide"><img src="./assets/images/cor_3.jpg" alt="photo indonesia" /></div>
+              <div class="swiper-slide"><img src="./assets/images/cor_4.jpg" alt="photo indonesia" /></div>
+              <div class="swiper-slide"><img src="./assets/images/cor_5.jpg" alt="photo indonesia" /></div>
+              <div class="swiper-slide"><img src="./assets/images/cor_6.jpg" alt="photo indonesia" /></div>
+            </div>
+          </div>
+          <div class="secrets-section__button secrets-section__button--wrapper-next">
+            <button type="button">
+              <svg class="secrets-section__button-next" width="24px" height="24px">
+                <use href="./assets/icons/symbol-defs.svg#icon-Union-1"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="secrets-section__swiper-pagination"></div>
+        <article class="secrets-section__statistics">
+          <div class="secrets-section__statistics--title">
+            <h3 class="animation-opacity-scale">By The Numbers</h3>
+            <p class="animation-opacity">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="secrets-section__statistics--wrapper">
+            <div class="secrets-section__statistics--accent animation-movement-left">
+              <h4>100+</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+            </div>
+            <div class="secrets-section__statistics--accent animation-opacity-scale">
+              <h4>43,000+</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.</p>
+            </div>
+            <div class="secrets-section__statistics--accent animation-movement-right">
+              <h4>30+</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="relief-section">
+        <h2 class="relief-section__title animation-opacity-scale">
+          Our hills and valleys are like nothing you’ve seen.
+        </h2>
+        <p class="animation-opacity">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet,
+          laoreet elit. Donec mauris tortor.
+        </p>
+        <button class="relief-section__button button open-modal animation-opacity" type="button">Learn More</button>
+      </section>
+      <section class="life-section" id="life-section">
+        <h3 class="life-section__title">
+          Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.
+        </h3>
+        <div class="life-section__video-container video-container">
+          <video class="life-section__video" controls muted>
+            <source src="./assets/video/life_indonesia.mp4" type="video/mp4" />
+            <source src="./assets/video/life_indonesia.webm" type="video/webm" />
+            Your browser does not support video
+          </video>
+        </div>
+        <div class="life-section__wrapper">
+          <div class="life-section__wrapper--card">
+            <img src="./assets/images/life_country.jpg" alt="this is photo Country Indonesia" />
+            <div class="life-section__text">
+              <h3>In The Country</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.</p>
+            </div>
+          </div>
+          <div class="life-section__wrapper--card">
+            <img src="./assets/images/life_people.jpg" alt="this is photo city Indonesia" />
+            <div class="life-section__text">
+              <h3>In The People</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-section" id="gallery-section">
+        <h2 class="animation-opacity-scale">Photo Gallery</h2>
+        <p class="animation-opacity">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget
+          tincidunt.
+        </p>
+        <div class="gallery-section__container animation-opacity">
+          <div class="gallery-section__container--wrapper-wrapper">
+            <div class="gallery-section__container--wrapper">
+              <img
+                class="gallery-section__style-img"
+                src="./assets/images/Gallery_Image_06.jpg"
+                alt="Women of Indonesia"
+              />
+              <img
+                class="gallery-section__style-img"
+                src="./assets/images/Gallery_Image_04.jpg"
+                alt="Shores and oceans of Indonesia"
+              />
+            </div>
+            <div class="gallery-section__container--wrapper">
+              <img
+                class="gallery-section__style-img"
+                src="./assets/images/Gallery_Image_05.jpg"
+                alt="Volcanoes of Indonesia"
+              />
+              <img
+                class="gallery-section__style-img"
+                src="./assets/images/GalleryImage_03.jpg"
+                alt="Mountains of Indonesia"
+              />
+            </div>
+          </div>
+          <div class="gallery-section__container--inline">
+            <div class="style-img-wrapper">
+              <img
+                class="gallery-section__style-img"
+                src="./assets/images/Gallery_Image_02.jpg"
+                alt="Peasants and fields of Indonesia"
+              />
+            </div>
+            <div class="style-img-wrapper">
+              <img
+                class="gallery-section__style-img"
+                src="./assets/images/Gallery_Image_01.jpg"
+                alt="Mountain villages and mists of Indonesia"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="actions-section">
+        <ol class="actions-section__wrapper-list">
+          <h2 class="actions-section__title animation-opacity">Getting here</h2>
+          <li class="animation-opacity">
+            <h3 class="actions-section__title--list before-line">Booking your flights</h3>
+            <div class="actions-section__readmore-container">
+              <p class="actions-section__text before-line">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget
+                tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra
+                neque auctor, lobortis enim.
+              </p>
+            </div>
+            <a href="#" class="actions-section__readmore-toggle">Read More</a>
+          </li>
+          <li class="animation-opacity">
+            <h3 class="actions-section__title--list before-line">Choosing your hotel</h3>
+            <div class="actions-section__readmore-container">
+              <p class="actions-section__text before-line">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget
+                tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra
+                neque auctor, lobortis enim.
+              </p>
+            </div>
+            <a href="#" class="actions-section__readmore-toggle">Read More</a>
+            <div class="actions-section__container before-line animation-opacity">
+              <img src="./assets/images/action-section_Photo.jpg" alt="motorcycle" />
+              <div class="wrapper">
+                <h3 class="actions-section__container--title">Travelling here</h3>
+                <div class="actions-section__readmore-container">
+                  <p class="actions-section__container--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus,
+                    eget tincidunt.
+                  </p>
+                </div>
+                <a href="#" class="actions-section__readmore-toggle">Read More</a>
+              </div>
+            </div>
+          </li>
+          <li class="animation-opacity">
+            <h3 class="actions-section__title--list">Planning your experiences</h3>
+            <div class="actions-section__readmore-container">
+              <p class="actions-section__text--last">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget
+                tincidunt lacus varius.
+              </p>
+            </div>
+            <a href="#" class="actions-section__readmore-toggle">Read More</a>
+            <button class="actions-section__button button open-modal animation-opacity" type="button">
+              Learn More
+            </button>
+          </li>
+        </ol>
+      </section>
+      <footer class="footer">
+        <nav class="footer__navigation">
+          <a class="footer__logo" href="#">
+            <img src="./assets/images/logo_EI_footer.png" alt="logo explore indonesia" />
+          </a>
+          <div class="footer__navigation--wrapper">
+            <ul class="footer__navigation--list">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#"> Pricing </a>
+              </li>
+              <li>
+                <a href="#">Company</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <address class="footer__address">
+          <ul class="footer__address--social">
+            <li>
+              <a href="#">
+                <svg class="" width="18px" height="18px">
+                  <use href="./assets/icons/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="" width="18px" height="18px">
+                  <use href="./assets/icons/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="" width="18px" height="18px">
+                  <use href="./assets/icons/symbol-defs.svg#icon-google-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__address--copyright" href="#">Copyright © 2019</a>
+          <a href="#header" class="footer__button-top">
+            <svg width="21px" height="38px">
+              <use href="./assets/icons/symbol-defs.svg#icon-Union-1"></use>
+            </svg>
+          </a>
+        </address>
+      </footer>
+      <div class="modal" id="contactModal">
+        <div class="modal-content">
+          <div class="modal-content__our-contacts">
+            <h2 class="modal-content__our-contacts--title modal__title-main">Our contacts</h2>
+            <div class="modal-content__our-contacts--info">
+              <div class="modal-content__our-contacts--info-wrapper">
+                <svg class="modal-content__our-contacts--icon">
+                  <use href="./assets/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+380123456789">+380123456789</a>
+              </div>
+              <div class="modal-content__our-contacts--info-wrapper">
+                <svg class="modal-content__our-contacts--icon">
+                  <use href="./assets/icons/symbol-defs.svg#icon-envelop"></use>
+                </svg>
+                <a href="mailto:info@example.com">mailto:info@example.com</a>
+              </div>
+            </div>
+            <div class="modal-content__social-wrapper">
+              <h3 class="modal-content__social-title modal-content__social-title--none">Connect with me:</h3>
+              <ul class="modal-content__social-item">
+                <li>
+                  <a href="#">
+                    <svg class="modal-content__our-contacts--icon">
+                      <use href="./assets/icons/symbol-defs.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="modal-content__our-contacts--icon">
+                      <use href="./assets/icons/symbol-defs.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="modal-content__our-contacts--icon">
+                      <use href="./assets/icons/symbol-defs.svg#icon-google-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <address>
+              <h3 class="modal-content__social-title modal-content__address-title">Our address</h3>
+              <a class="modal-content__address" href="https://maps.app.goo.gl/ttL4CMoHSgroCKrX7" target="_blank"
+                >MP33+GHJ, Area Hutan Dan Kebun, Karanggandu, Kec. Watulimo, Kabupaten Trenggalek, Jawa Timur 66382,
+                Indonesia</a
+              >
+            </address>
+          </div>
+          <div class="modal__form">
+            <svg class="close-modal">
+              <use href="./assets/icons/symbol-defs.svg#icon-cross"></use>
+            </svg>
+            <h2 class="modal__form-titl modal__title-main">Contact with us</h2>
+            <form id="contactForm">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="enter your name" required />
+
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                pattern="\+?[0-9\s\-]{10,17}"
+                id="phone"
+                name="phone"
+                placeholder="enter your phone numbers"
+                required
+              />
+
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="enter your E-mail" required />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="20"
+                placeholder="write your wishes and suggestions"
+              ></textarea>
+
+              <button class="modal__button button" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/script_navbar.js" defer></script>
+    <script src="./js/script_button.js" defer></script>
+    <script src="./js/script_open-modal.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/script_swiper.js" defer></script>
+    <script src="./js/button_show_more.js" defer></script>
+    <script src="./js/script_animations.js" defer></script>
+  </body>
+</html>
